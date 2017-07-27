@@ -1,0 +1,116 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+    <meta charset="utf-8">
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+      <link rel="stylesheet" type="text/css" href="css/app.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+    <header>
+      <div class="navbar-fixed">
+        <nav class="nav-extended blue darken-1">
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">PBL-VS-LAB</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li class=""><a href="projetos.html">Projetos</a></li>
+              <li class="active"><a href="clientes.html">Clientes</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li><a href="collapsible.html">Logout</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+              <li><a href="projetos.html">Projetos</a></li>
+              <li class="active"><a href="clientes.html">Clientes</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li><a href="collapsible.html">Logout</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="clientes">
+      <!-- SideBar -->
+      <!-- content -->
+       <div class="container clientes-container">
+        <div class="col s12">
+          <h4>Clientes</h4>
+          <div class="fixed-action-btn">
+              <a class="btn-floating btn-large red" href="clientes-cadastro.html">
+                <i class="large material-icons">add</i>
+              </a>
+              <ul>
+                <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+                <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+                <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+              </ul>
+          </div>
+
+          <table class="bordered highlight responsive-table">
+            <thead>
+              <tr>
+                  <th>Nome</th>
+                  <th>Nome Fantasia/Apelido</th>
+                  <th>CPF/CNPJ</th>
+                  <th>Telefone</th>
+                  <th class="right-align">Ação</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Software Center Place</td>
+                <td>SCP</td>
+                <td>18.132.537/0001-70</td>
+                <td>75 99988-8566</td>
+                <td class="right-align">
+                  <a href="clientes-cadastro.html">  Editar</a> | <a href=""> Excluir </a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer blue darken-1">
+      <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">GRUPO GICE</h5>
+                <p class="grey-text text-lighten-4">Tutorial do materialize e angulaJs</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">PBL-VS</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Materialize</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Angular JS</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2017 Copyright 
+            <a class="grey-text text-lighten-4 right" href="#!">Universidade Estadual de Feira de Santana</a>
+            </div>
+          </div>
+    </footer>
+
+      
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+      <script src="js/material-jquery.js"></script>
+    </body>
+  </html>
