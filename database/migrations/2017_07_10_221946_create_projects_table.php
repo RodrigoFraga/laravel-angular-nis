@@ -14,7 +14,11 @@ class CreateProjectsTable extends Migration
     {
         Schema::create('projects', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('client_id');
+            $table->integer('client_id')->unsigned();
+            $table->foreign('client_id')
+                ->references('id')
+                ->on('clients');
+
             $table->string('name', 60);
             $table->integer('price');
             $table->char('phone', 20);

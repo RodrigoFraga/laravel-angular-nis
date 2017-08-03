@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Project;
+use App\Models\Client;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class ProjectController extends Controller
+class ClientController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +17,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        return Project::all();
+        return Client::all();
     }
 
 
@@ -30,15 +30,7 @@ class ProjectController extends Controller
     public function store(Request $request)
     {
         $dados = $request->all();
-        $projeto = New Project();
-        $projeto->name = $dados['name'];
-        $projeto->client_id = $dados['client_id'];
-        $projeto->price = $dados['price'];
-        $projeto->phone = $dados['phone'];
-
-        $projeto->save();
-
-        return $projeto;
+        return Client::create($dados);
     }
 
     /**
@@ -49,7 +41,7 @@ class ProjectController extends Controller
      */
     public function show($id)
     {
-        return Project::find($id);
+        return Client::find($id);
     }
 
 
@@ -64,14 +56,8 @@ class ProjectController extends Controller
     {
         $dados = $request->all();
 
-        $projeto = Project::find($id);
-
-        $projeto->name = $dados['name'];
-        $projeto->phone = $dados['phone'];
-
-        $projeto->save();
-
-        return $projeto;
+        Client::where('id', $id)->update($dados);
+        return Client::find($id);
     }
 
     /**
@@ -82,7 +68,7 @@ class ProjectController extends Controller
      */
     public function destroy($id)
     {
-        Project::destroy($id);
+        Client::destroy($id);
 
         return 'Projeto deletado';
     }

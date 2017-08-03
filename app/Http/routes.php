@@ -12,8 +12,19 @@
 */
 
 Route::get('/', function () {
-    return view('');
+    return view('welcome');
 });
 
 Route::get('/projects', 'ProjectController@index');
+Route::get('/projects/{id}', 'ProjectController@show');
 Route::post('/projects', 'ProjectController@store');
+Route::put('/projects/{id}', 'ProjectController@update');
+Route::delete('/projects/{id}', 'ProjectController@destroy');
+
+Route::resource('/clients', 'ClientController');
+
+/*Route::get('/clients', 'ClientController@index');
+Route::get('/clients/{id}', 'ClientController@show');
+Route::post('/clients', 'ClientController@store');
+Route::put('/clients/{id}', 'ClientController@update');
+Route::delete('/clients/{id}', 'ClientController@destroy');*/
