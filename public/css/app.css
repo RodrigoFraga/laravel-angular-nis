@@ -1,33 +1,40 @@
 
-  body {
+body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-  }
+}
 
-  main {
+main {
     flex: 1 0 auto;
-  }
+}
 
+main .ng-scope:first-child {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
 
-.projetos{
+.projetos {
     background: url("../img/business-5.jpeg") no-repeat;
     background-size: cover;
 }
-.projetos-container{
-	background-color: rgba(251, 250, 244, 0.9);
-	padding: 0px 20px 0px 20px; /*top rigth, bottom, left*/
+
+.projetos-container {
+    background-color: rgba(251, 250, 244, 0.9);
+    padding: 0px 20px 0px 20px; /*top rigth, bottom, left*/
     margin-bottom: 15px;
-	margin-top: 15px;
+    margin-top: 15px;
 }
 
-  .clientes{
-      background: url("../img/business-3.jpg") no-repeat;
-      background-size: cover;
-  }
-  .clientes-container{
-      background-color: rgba(251, 250, 244, 0.9);
-      padding: 0px 20px 0px 20px; /*top rigth, bottom, left*/
-      margin-bottom: 15px;
-      margin-top: 15px;
-  }
+.clientes {
+    background: url("../img/business-3.jpg") no-repeat;
+    background-size: cover;
+    padding: 1px;
+}
+
+.clientes-container {
+    background-color: rgba(251, 250, 244, 0.9);
+    padding: 0px 20px 0px 20px; /*top rigth, bottom, left*/
+    margin-bottom: 15px;
+    margin-top: 15px;
+}

@@ -9,6 +9,11 @@
     flex: 1 0 auto;
   }
 
+  main .ng-scope:first-child {
+      padding-top: 1px;
+      padding-bottom: 1px;
+  }
+
 
 .projetos{
     background: url("../img/business-5.jpeg") no-repeat;
